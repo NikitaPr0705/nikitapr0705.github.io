@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+
+	<header class="header">
+
+		<div class="header__bar-wrapper">
+
+				<div class="header__bar">
+					<div class="header__links">
+						<div class="container mobile-header-container">
+						<li class="open-menu-link desktop-hidden"><a class="header__links-list-link open-menu" href="#!">Для жизни</a></li>
+						<a href="#!" class="header__links-search desktop-hidden">
+							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.6912 21.3812C13.0633 21.3807 15.367 20.5867 17.2355 19.1255L23.1103 25L25 23.1104L19.1252 17.2359C20.5872 15.3673 21.3818 13.0632 21.3824 10.6906C21.3824 4.79608 16.586 0 10.6912 0C4.79633 0 0 4.79608 0 10.6906C0 16.5851 4.79633 21.3812 10.6912 21.3812ZM10.6912 2.67265C15.1133 2.67265 18.7096 6.26871 18.7096 10.6906C18.7096 15.1125 15.1133 18.7086 10.6912 18.7086C6.26904 18.7086 2.6728 15.1125 2.6728 10.6906C2.6728 6.26871 6.26904 2.67265 10.6912 2.67265Z" fill="white"/>
+								</svg>
+
+						</a>
+						<div class="container header-container d-flex">
+							<nav class="header__links-nav">
+								<ul class="header__links-list d-flex">
+									<li class="header__links-list-item"><a class="header__links-list-link" href="#!">Для жизни</a></li>
+									<li class="header__links-list-item"><a class="header__links-list-link" href="#!">Бизнесу</a></li>
+									<li class="header__links-list-item"><a class="header__links-list-link" href="#!">Крупному и международному</a></li>
+									<li class="header__links-list-item"><a class="header__links-list-link" href="#!">Инвестиции</a></li>
+									<li class="header__links-list-item"><a class="header__links-list-link" href="#!">О Банке</a></li>
+									<li class="header__links-list-item"><a class="header__links-list-link" href="#!">ИдеяБанк</a></li>
+									<li class="header__links-list-item"><a class="header__links-list-link" href="#!">PRIME</a></li>
+									<li class="header__links-list-item"><a class="header__links-list-link" href="#!">EN</a></li>
+								</ul>
+								<a href="#!" class="header__links-info location-link desktop-hidden">
+									Отделения и банкоматы
+								</a>
+								<!-- header__links-info -->
+
+								<a href="#!" class="header__links-info phone-link desktop-hidden">
+									Позвонить
+								</a>
+							</nav>
+
+							<a href="#!" class="header__links-info location-link mobile-hidden">
+								Отделения и банкоматы
+							</a>
+							<!-- header__links-info -->
+
+							<a href="#!" class="header__links-info phone-link mobile-hidden">
+								Позвонить
+							</a>
+							<!-- header__links-info -->
+
+							<a href="#!" class="header__links-search mobile-hidden">
+								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.6912 21.3812C13.0633 21.3807 15.367 20.5867 17.2355 19.1255L23.1103 25L25 23.1104L19.1252 17.2359C20.5872 15.3673 21.3818 13.0632 21.3824 10.6906C21.3824 4.79608 16.586 0 10.6912 0C4.79633 0 0 4.79608 0 10.6906C0 16.5851 4.79633 21.3812 10.6912 21.3812ZM10.6912 2.67265C15.1133 2.67265 18.7096 6.26871 18.7096 10.6906C18.7096 15.1125 15.1133 18.7086 10.6912 18.7086C6.26904 18.7086 2.6728 15.1125 2.6728 10.6906C2.6728 6.26871 6.26904 2.67265 10.6912 2.67265Z" fill="white"/>
+									</svg>
+
+							</a>
+							<!-- header__links-search -->
+						</div>
+					</div>
+					</div>
+					<!-- header__links -->
+
+					<div class="header__nav-wrapper">
+						<div class="container d-flex container__nav-wrapper">
+							<img class="main-logo header__main-logo" src="img/icons/header/logo.png" alt="logo">
+
+							<nav class="header__nav">
+								<ul class="header__nav-list d-flex">
+									<li class="header__nav-item"><a href="#!">Халва</a></li>
+									<li class="header__nav-item"><a href="#!">Карты</a></li>
+									<li class="header__nav-item"><a href="#!">Кредиты</a></li>
+									<li class="header__nav-item"><a href="#!">Вклады</a></li>
+									<li class="header__nav-item"><a href="#!">Сервисы</a></li>
+									<li class="header__nav-item"><a href="#!">Страхование</a></li>
+									<li class="header__nav-item"><a href="#!">Курсы валют</a></li>
+								</ul>
+							</nav>
+							<!-- header__nav -->
+
+							<a class="header__nav-btn d-flex" href="#!">
+								<img src="img/icons/main/arrow-right.svg" alt="arrow-right">
+								Интернет-банк
+							</a>
+						</div>
+					</div>
+					<!-- header__nav-wrapper -->
+				</div>
+				<!-- header__bar -->
+
+		</div>
+		<!-- header__bar-wrapper -->
+		<div class="header__content-wrapper">
+			<div class="container">
+				<div class="header__content d-flex">
+					<img class="header__content-img mobile-hidden " src="img/images/header/image.png" alt="header-img">
+
+					<div class="header__content-daya d-flex flex-column">
+						<h1 class="header__content-title">Плати картой ШОППЕР - экономь до 385 рублей на покупках!</h1>
+						<img class="header__content-img desktop-hidden " src="img/images/header/image.png" alt="header-img">
+
+						<a href="#!" class="btn btn-main header__content-btn">Оформить карту онлайн</a>
+
+						<div class="header__content-info">
+							<p>Совершай покупки в любых продуктовых магазинах и любых магазинах одежды, получай деньги назад на карту каждый месяц. Это называется (мани-бэк).</p>
+						</div>
+					</div>
+				</div>
+				<!-- header__content -->
+			</div>
+		<!-- container -->
+		</div>
+	</header>
+	<!-- header -->
+
+	<section class="section-calc">
+		<div class="container">
+			<div class="calc d-flex flex-column">
+				<h2 class="main__title section-title__calc">Рассчитайте мани-бэк!</h2>
+				<!-- main__title -->
+
+				<div class="calc__config d-flex">
+
+					<div class="calc__config_left">
+						<h3 class="title title__left">Сумма расходов в месяц</h3>
+
+						<div class="steps-modal__item__content">
+							<div class="range">
+							  <div class="range__head">
+								<!-- <span>100 000 <img src="assets/img/currency.svg" alt="currency"></span>
+
+								<span>5 000 000 <img src="assets/img/currency.svg" alt="currency"></span> -->
+							  </div>
+							  <!-- range__head -->
+							  <div class="range__input">
+								<h4 class="calc__range-head-title">Продуктовые магазины и супермаркеты</h4>
+								<input type="number" value="0" id="amount" name="amount"  pattern="[0-9]*" inputmode="numeric" placeholder="500000" class="validate__item validate__range">
+								<span>BYN</span>
+
+								<!-- <div class="range__message"><p>Минимальная сумма: 100 000 рублей</p></div> -->
+								<!-- message -->
+							  </div>
+							  <div id="slider-range"></div>
+
+
+							</div>
+							<div class="range">
+								<div class="range__head">
+								  <!-- <span>100 000 <img src="assets/img/currency.svg" alt="currency"></span>
+
+								  <span>5 000 000 <img src="assets/img/currency.svg" alt="currency"></span> -->
+								</div>
+								<!-- range__head -->
+								<div class="range__input">
+								  <h4 class="calc__range-head-title">Магазин одежды и обуви</h4>
+								  <input type="number" value="0" id="amount2" name="amount"  pattern="[0-9]*" inputmode="numeric" placeholder="500000" class="validate__item validate__range">
+								  <span>BYN</span>
+
+								  <!-- <div class="range__message"><p>Минимальная сумма: 100 000 рублей</p></div> -->
+								  <!-- message -->
+								</div>
+								<div id="slider-range2"></div>
+
+
+							  </div>
+						  </div>
+
+
+						<!-- <div class="calc__range">
+							<div class="calc__range-head">
+								<h4 class="calc__range-head-title">Продуктовые магазины и супермаркеты</h4>
+								<input type="number" value="1000">
+								<span>BYN</span>
+							</div>
+
+							<div class="calc__range-input">
+
+							</div>
+						</div>
+
+						<div class="calc__range">
+							<div class="calc__range-head">
+								<h4 class="calc__range-head-title">Магазин одежды и обуви</h4>
+								<input type="number" value="565">
+								<span>BYN</span>
+							</div>
+
+							<div class="calc__range-input">
+
+							</div>
+						</div> -->
+						<!-- calc__range -->
+					</div>
+					<!-- calc__config_left -->
+
+					<div class="calc__config_right d-flex">
+						<div class="calc__img">
+							<h3 class="title title__right">Ваш доход в год</h3>
+
+							<img src="img/images/main/card.png" alt="card-image">
+						</div>
+						<!-- calc__img -->
+
+						<div class="calc__data">
+							<div class="calc__data-item">
+								<h4 class="calc__data-price">30 <sub>BYN</sub></h4>
+								<span class="calc__data-descr">Мани-бэк за месяц</span>
+							</div>
+							<!-- calc__data-item -->
+
+							<div class="calc__data-item">
+								<h4 class="calc__data-price">360 <sub>BYN</sub></h4>
+								<span class="calc__data-descr">Ежемесячный Мани-бэк за год</span>
+							</div>
+							<!-- calc__data-item -->
+
+							<div class="calc__data-item">
+								<h4 class="calc__data-price">25.2 <sub>BYN</sub></h4>
+								<span class="calc__data-descr">Годовой Мани-бэк</span>
+							</div>
+							<!-- calc__data-item -->
+
+							<div class="calc__data-item">
+								<h4 class="calc__data-price">385.2 <sub>BYN</sub></h4>
+								<span class="calc__data-descr">Итого за год</span>
+							</div>
+							<!-- calc__data-item -->
+						</div>
+						<!-- calc__data -->
+
+					</div>
+					<!-- calc__config_right -->
+				</div>
+				<!-- calc__config -->
+
+				<span class="calc__additional">* Приведены размеры процентных ставок, по которым банк начисляет мани-бэк (т.е. до удержания подоходного налога, если это определено законодательством)</span>
+			</div>
+			<!-- calc -->
+		</div>
+	</section>
+	<!-- section-calc -->
+
+	<section class="section-steps">
+		<div class="container">
+			<div class="steps d-flex flex-column">
+				<h2 class="main__title section-steps__title">Как легко оформить карту Шоппер от МТБанк</h2>
+				<!-- main__title -->
+
+				<div class="steps__list d-flex">
+					<div class="steps__item">
+						<b class="steps__numb">1</b>
+						<!-- number -->
+
+						<div class="steps__info">
+							<span>Заполните заявку</span>
+							<p>Нажмите на кнопку «оформить карту»</p>
+						</div>
+						<!-- info -->
+					</div>
+					<!-- item -->
+
+					<div class="steps__item">
+						<b class="steps__numb">2</b>
+						<!-- number -->
+
+						<div class="steps__info">
+							<span>Звонок от специалиста</span>
+							<p>Дождитесь звонка от специалиста с целью уточнения всех условий</p>
+						</div>
+						<!-- info -->
+					</div>
+					<!-- item -->
+
+					<div class="steps__item">
+						<b class="steps__numb">3</b>
+						<!-- number -->
+
+						<div class="steps__info">
+							<span>Доставка карты</span>
+							<p>Получите карту с быстрой доставкой прямо к вам на дом</p>
+						</div>
+						<!-- info -->
+					</div>
+					<!-- item -->
+
+					<div class="steps__item">
+						<b class="steps__numb">4</b>
+						<!-- number -->
+
+						<div class="steps__info">
+							<span>Пользуйтесь</span>
+							<p>Пользуйтесь всеми преимуществами карты Visa Gold</p>
+						</div>
+						<!-- info -->
+					</div>
+					<!-- item -->
+				</div>
+				<!-- list -->
+
+				<a href="#quiz-modal" class="btn steps__btn btn-secondary">Оформить карту</a>
+			</div>
+		</div>
+	</section>
+	<!-- section-steps -->
+
+	<section class="section-application">
+		<div class="container">
+			<div class="application d-flex">
+				<div class="application__data">
+					<img class="application__data-img" src="img/images/main/card.png" alt="card-image">
+
+					<ul class="application__data-list">
+						<li class="application__data-item">Быстрое оформление заявки</li>
+						<li class="application__data-item">Оформление карты за 5-10 минут</li>
+					</ul>
+				</div>
+				<!-- application__data -->
+
+				<form class="application__form d-flex flex-column">
+					<div class="main__title application__form-title">Оформление карты</div>
+
+					<div class="field">
+						<input type="text" placeholder="Фамилия*">
+					</div>
+					<!-- field -->
+
+					<div class="field">
+						<input type="text" placeholder="Имя*">
+					</div>
+					<!-- field -->
+
+					<div class="field">
+						<input type="phone" placeholder="Номер телефона*">
+					</div>
+					<!-- field -->
+
+					<label class="checkbox application__form-checkbox">
+						<input class="visually-hidden" type="checkbox">
+						<span class="checkmark"></span>
+						<i class="checkbox__descr">Даю согласие на <a href="#!">обработку персональных данных</a></i>
+					</label>
+
+					<button type="submit" class="btn btn-main form-btn">Отправить заявку</button>
+				</form>
+				<!-- application__form -->
+
+			</div>
+			<!-- application -->
+		</div>
+		<!-- container -->
+	</section>
+	<!-- section-application -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__text">
+				<p>Владелец сайта ООО «ЛидПро Групп», УНП 193540200, действует в интересах заказчика ЗАО «МТБанк» и не оказывает услуг по оформлению и предоставлению населению микрозаймов, кредитов и других финансовых услуг, регулируемых Указом Президента № 325 «О привлечении и предоставлении займов, деятельности микрофинансовых организаций», не является финансовой организацией.</p>
+				<br>
+				<p>Действует в интересах заказчика ЗАО «МТБанк» (УНП 100394906), находящегося по адресу Республика Беларусь, г. Минск, ул. Толстого 10. Лицензия на осуществление банковской деятельности № 13 от 06.05.2013 г. выдана ЗАО «МТБанк».</p>
+				<br>
+				<p>Для повышения удобства пользования веб-сайтом и персонализации сервисов на данном сайте используются файлы «Cookie». Файлы «cookie» содержат информацию о предыдущих посещениях веб-сайта. Если вы не хотите использовать файлы «cookie», измените настройки вашего браузера.</p>
+				<br>
+				<p>В зависимости от территориальности и иных выбранных критериев, вы, как потенциальный клиент, даёте согласие:
+				Форма согласия потенциальных клиентов на обработку их персональных данных</p>
+				<br>
+				<p>Находясь на сайте, вы соглашаетесь с правилами использования
+				подробная информация</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/remodal.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/select2.min.js"></script>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

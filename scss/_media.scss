@@ -1,0 +1,296 @@
+@media screen and (min-width: 992px) {
+  .header {
+    .container {
+      max-width: 1160px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .header {
+
+    &__offer {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-content {
+        margin-bottom: 25px;
+        text-align: center;
+      }
+    }
+
+    &__nav {
+      margin-right: 0;
+    }
+
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+    }
+
+    &__mail {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+
+
+    &__form-wrap {
+      margin-top: 0;
+    }
+
+  }
+
+  .trading {
+
+    // .trading__item
+
+    &__item {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      img {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+
+      &-content {
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .header {
+
+    &.active {
+      height: 100vh;
+    }
+
+    &__panel {
+      align-items: center;
+    }
+
+    // .menu
+    &__wrapper {
+      position: fixed;
+      background: #fff;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      max-height: 100vh;
+      width: 100vw;
+      overflow: auto;
+      display: none;
+
+      &.active {
+        overflow: hidden;
+        display: flex;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        pointer-events: all;
+        justify-content: center;
+        align-items: center;
+        z-index: 22;
+        animation: fade 0.1s linear;
+      }
+    }
+
+    &__nav {
+      height: auto;
+      margin-bottom: 78px;
+      flex-direction: column;
+
+      ul {
+        flex-direction: column;
+
+        li {
+          position: static;
+
+          // &:hover {
+          //   .header__nav-inner {
+          //     display: flex;
+          //   }
+          // }
+
+          &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 25px;
+          }
+
+          a {
+            color: $primary;
+          }
+        }
+      }
+
+    }
+
+    &__form {
+      button {
+        font-size: 18px;
+        padding: 15px;
+      }
+    }
+
+
+    // .burger
+    .burger {
+      display: block;
+      position: relative;
+      height: 20px;
+      width: 30px;
+      z-index: 102;
+      cursor: pointer;
+
+      &.active-burger {
+        &:before {
+          background: $primary;
+          transform: rotate(45deg);
+          transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+          top: 8px;
+        }
+
+        &:after {
+          background: $primary;
+          transform: rotate(-45deg);
+          bottom: 10px;
+          transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+        }
+
+        & span {
+          transform: scale(0);
+        }
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: $secondary;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+      }
+
+      &:before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+
+      span {
+        position: absolute;
+        top: 9px;
+        right: 0;
+        width: 100%;
+        background: $secondary;
+        height: 2px;
+        transform: scale(1);
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+      }
+    }
+  }
+
+  .section-profit {
+    .profit {
+      .list {
+        &__item {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .btn {
+    &__main {
+      font-size: 18px;
+    }
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  h2.title {
+    margin-bottom: 20px;
+  }
+
+  .header {
+
+    &__form {
+      .wrapper {
+        margin-bottom: 10px;
+      }
+
+      padding: 0 10px 15px 10px;
+
+      &-input {
+        input {
+          padding: 17px 15px;
+        }
+      }
+
+      &-title {
+        padding: 25px 0 15px 0;
+      }
+
+      &-footer {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+
+    &__offer-content {
+      margin-bottom: 0;
+    }
+  }
+
+  .section-functions {
+    .functions {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .section-guide {
+    .guide {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+$maxWidht: 1440;
+
+@mixin adaptive-font($pcSize, $mobSize){
+	$addSize: $pcSize - $mobSize;
+	$addMobSize: $addSize + $addSize * .7;
+	@media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidht}));
+    }
+	@media (min-width: 768px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidht}));
+    }
+	@media (min-width: #{$maxWidht + px}){font-size: #{$pcSize + px};}
+}
+
+@mixin adaptive-width($pcSize, $mobSize){
+	$addSize: $pcSize - $mobSize;
+	$addMobSize: $addSize + $addSize * .7;
+	@media (max-width: 767px) {
+        width: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidht}));
+    }
+	@media (min-width: 768px) {
+        width: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidht}));
+    }
+	@media (min-width: #{$maxWidht + px}){width: #{$pcSize + px};}
+}
